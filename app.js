@@ -12,9 +12,12 @@ app.get('/about',(req, res)=>{
 })
 
 app.get('/result',(req, res)=>{
+    console.log(req.params)
     res.send("About will appear here ${req.query.name}")
 })
 
 app.listen(3000, ()=>{
     console.log("Server has started")
 })
+
+// I am here
